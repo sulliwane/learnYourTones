@@ -1,0 +1,3 @@
+rootProject.name = 'learnYourTones'
+
+include ':app'
