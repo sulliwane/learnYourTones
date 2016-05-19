@@ -10,6 +10,7 @@ import {
   Text,
   View
 } from 'react-native';
+import MainPage from './container/Mainpage';
 
 class learnYourTones extends Component {
   render() {

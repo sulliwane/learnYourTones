@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import MainPage from './App/container/Mainpage';
 
 class learnYourTones extends Component {
   render() {
