@@ -10,7 +10,7 @@ import {
   Text,
   View
 } from 'react-native';
-import MainPage from './container/Mainpage';
+import MainPage from './App/containers/Mainpage';
 
 class learnYourTones extends Component {
   render() {
@@ -19,6 +19,7 @@ class learnYourTones extends Component {
         <Text style={styles.welcome}>
           Welcome to Learn your Tones!
         </Text>
+        <MainPage />
       </View>
     );
   }

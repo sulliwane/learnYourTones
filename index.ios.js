@@ -11,22 +11,16 @@ import {
   Text,
   View
 } from 'react-native';
-import MainPage from './App/container/Mainpage';
+import MainPage from './App/containers/MainPage';
 
 class learnYourTones extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to learnYourTones!
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <MainPage />
       </View>
     );
   }
@@ -43,11 +37,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
 
