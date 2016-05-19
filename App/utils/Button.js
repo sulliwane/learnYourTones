@@ -9,10 +9,6 @@ import {
 
 class Button extends Component {
   Static: {
-    title: 'Button',
-    containStyle: {backgroundColor: '#408ffa',padding: 5,borderRadius: 5},
-    titleStyle: {fontSize: 15,color:'white'},
-    onPress: () => {},
   }
   PropTypes: {
     title: React.PropTypes.string,
@@ -26,8 +22,8 @@ class Button extends Component {
       <TouchableOpacity
         activeOpacity={0.7}
         onPress={this.props.onPress}>
-        <View style={[this.props.containStyle,styles.shadow]}>
-          <Text style={this.props.titleStyle}>{this.props.title}</Text>
+        <View style={[this.props.containStyle,styles.shadow,styles.containStyle]}>
+          <Text style={[this.props.titleStyle,styles.titleStyle]}>{this.props.title}</Text>
         </View>
       </TouchableOpacity>
     );
@@ -39,6 +35,16 @@ const styles = StyleSheet.create({
     shadowColor: 'white',
     shadowOffset: {width:2,height:2},
     shadowOpacity: 0.7,
+  },
+  containStyle: {
+    backgroundColor: '#408ffa',
+    padding: 5,
+    borderRadius: 5,
+    margin: 5,
+  },
+  titleStyle: {
+    fontSize: 15,
+    color:'white'
   },
 });
 
