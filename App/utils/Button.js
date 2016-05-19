@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import {
-  Component,
   StyleSheet,
   ScrollView,
+  TouchableOpacity,
   Text,
   View
 } from 'react-native';
 
 class Button extends Component {
+  Static: {
+    title: 'Button',
+    containStyle: {backgroundColor: '#408ffa',padding: 5,borderRadius: 5},
+    titleStyle: {fontSize: 15,color:'white'},
+    onPress: () => {},
+  }
   PropTypes: {
     title: React.PropTypes.string,
     containStyle: React.PropTypes.object,
@@ -15,16 +21,7 @@ class Button extends Component {
     onPress: React.PropTypes.func,
   }
 
-  getDefaultProps: function () {
-    return {
-      title: 'Button',
-      containStyle: {backgroundColor: '#408ffa',padding: 5,borderRadius: 5},
-      titleStyle: {fontSize: 15,color:'white'},
-      onPress: () => {},
-    };
-  }
-
-  render: function() {
+  render() {
     return (
       <TouchableOpacity
         activeOpacity={0.7}
