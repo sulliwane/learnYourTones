@@ -11,9 +11,9 @@ import {
   Text,
   View
 } from 'react-native';
+
+import Realm from 'realm';
 import pako from 'pako';
-import 'whatwg-fetch';
-const Realm = require('realm');
 import RNFetchBlob from 'react-native-fetch-blob'
 
 class testRN extends Component {
