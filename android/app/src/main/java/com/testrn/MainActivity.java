@@ -1,6 +1,7 @@
 package com.testrn;
 
 import com.facebook.react.ReactActivity;
+import com.RNFetchBlob.RNFetchBlobPackage;
 import io.realm.react.RealmReactPackage;
 
 public class MainActivity extends ReactActivity {
